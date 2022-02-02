@@ -42,8 +42,13 @@ const Sidebar = () => {
             <p className='my-2'>xavicoel@gmail.com</p>
             <p className='my-2'>+33766445477</p>
         </div>
-        <button className=' bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'>Email me</button>
-        <button className=' bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'>Toggle me</button>
+        <button className=' bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none'
+        onClick={() => window.open('mailto:xavicoel@gmail.com')}>
+            Email me
+        </button>
+        <button className=' bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'>
+            Toggle me
+        </button>
  
   </div>
   )
