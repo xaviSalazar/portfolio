@@ -1,5 +1,5 @@
 import {RiComputerLine} from 'react-icons/ri'
-import { IService, ISkill } from './type';
+import { IProject, IService, ISkill } from './type';
 import { SiCplusplus } from "react-icons/si";
 import { GiCircuitry } from "react-icons/gi";
 import {BsCircleFill} from 'react-icons/bs'
@@ -85,5 +85,44 @@ export const tools:ISkill [] = [
         name:'AgileMethodology and Scrum',
         level: '90%',
         Icon: BsCircleFill
+    },
+]
+
+export const projects:IProject[] = [ 
+    {
+
+        name: "Qt HMI interface development to pilot a motor",
+        description: 
+            "This project allows to monitor the current sensing in a motor",
+        image_path: "/images/ihmmotor.jpg",
+        deployed_url: "https://github.com/xaviSalazar/IHMstage",
+        github_url: "https://github.com/xaviSalazar/IHMstage",
+        category : ["C++"],
+        key_techs :["C++","Qt Creator"],
+
+    },
+    {
+        
+        name: "Embedded Image Classification Prototype",
+        description: 
+            "Image Classification Microcontroller (Edge computing)",
+        image_path: "/images/pcbcircuit.jpg",
+        deployed_url: "private",
+        github_url: "private",
+        category : ["C++"],
+        key_techs :["C++","ESP32"],
+
+    },
+    {
+        
+        name: "FPGA HDMI image generator",
+        description: 
+            "HDMI 1.0 protocol implementation in a FPGA",
+        image_path: "/images/vhdl.jpg",
+        deployed_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+        github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+        category : ["VHDL"],
+        key_techs :["VHDL","FPGA"],
+
     },
 ]
