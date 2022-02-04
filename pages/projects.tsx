@@ -28,7 +28,8 @@ const Projects = () => {
     }
 
     return (
-        <motion.div className="px-5 py-2 overflow-y-scroll" style={{height:'65vh'}}
+        
+        <motion.div className=" px-5 py-2 overflow-y-scroll" style={{height:'65vh'}}
             variants={routeAnimation} 
             initial="initial"
             animate="animate"
@@ -52,6 +53,7 @@ const Projects = () => {
             }
         </motion.div>
         </motion.div>
+        
     );
 };
 export default Projects

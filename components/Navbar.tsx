@@ -7,18 +7,18 @@ const NavItem:FunctionComponent<{
     setActiveItem: Function,
     name:string,
     route: string
-}> = ({activeItem,setActiveItem,name,route})=> {
+}> = ({activeItem,setActiveItem,name,route},e)=> {
     return (
-        
             activeItem !== name ? (
-            <Link href={route}>
+            <Link scroll={false} href={route}>
             <a >
-                <span onClick={()=>setActiveItem(name)} className="hover:text-green">
+                <span onClick={()=>{setActiveItem(name)}} className="hover:text-green">
                     {name}
                 </span>
             </a>
             </Link>
-            ):null
+            ):
+            null
     )
 }
 
@@ -42,7 +42,6 @@ const { pathname } = useRouter()
                 <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="About" route='/'/>
                 <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Projects" route='/projects'/>
                 <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Resume" route='/resume'/>
-
            </div>
         </div>
     )

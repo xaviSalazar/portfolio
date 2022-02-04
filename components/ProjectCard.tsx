@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import { stagger, fadeInUp } from "../animations"
 
+
 const ProjectCard:FunctionComponent< { 
     project:IProject;
     showDetail:null | number;
@@ -26,13 +27,14 @@ const ProjectCard:FunctionComponent< {
 }) => {
 
 
+
     return (
-        <div>
+        <div >
             <Image 
                 src={image_path} 
                 alt={name} 
                 className="cursor-pointer" 
-                onClick={() => setShowDetail(id)}
+                onClick={() => {setShowDetail(id)}}
                 width="300"
                 height="150"
                 layout="responsive"
@@ -48,7 +50,7 @@ const ProjectCard:FunctionComponent< {
             {
                 showDetail === id && (
     
-            <div className="absolute grid md:grid-cols-2 top-0 left-0 z-10 h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2 md:p-10 rounded-lg">
+            <div className="absolute grid md:grid-cols-2 top-20 left-0 z-10 h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2 md:p-10 rounded-lg">
 
                 <motion.div 
                     variants={stagger} 
@@ -59,13 +61,13 @@ const ProjectCard:FunctionComponent< {
                     <motion.div 
                         variants={fadeInUp} 
                         className="border-4 border-gray-100">
-                    <Image 
-                        src={image_path} 
-                        alt={name} 
-                        width="300"
-                        height="150"
-                        layout="responsive"
-                    />
+                        <Image 
+                            src={image_path} 
+                            alt={name} 
+                            width="300"
+                            height="150"
+                            layout="responsive"
+                        />
                     </motion.div>
 
                     <motion.div className="flex justify-center my-4 space-x-3" variants={fadeInUp}>
@@ -79,16 +81,17 @@ const ProjectCard:FunctionComponent< {
 
                 </motion.div>
 
-                <motion.div variants={stagger} initial="initial" animate="animate">
-                    <motion.h2 variants = {fadeInUp} className="mb-3 text-x1 font-medium md:text-2x1">{name}</motion.h2>
-                    <motion.h3 variants = {fadeInUp} className="mb-3 font-medium">{description}</motion.h3>
-                    <motion.div variants = {fadeInUp} className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
-                        {
-                            key_techs.map( (tech)=>(
-                            <span key = {tech}
-                            className="px-2 py-1 my-1 bg-gray-200 dark:bg-dark-200 round"
-                            >{tech}</span>
-                            ))}
+
+                    <motion.div variants={stagger} initial="initial" animate="animate">
+                        <motion.h2 variants = {fadeInUp} className="mb-3 text-x1 font-medium md:text-2x1">{name}</motion.h2>
+                        <motion.h3 variants = {fadeInUp} className="mb-3 font-medium">{description}</motion.h3>
+                        <motion.div variants = {fadeInUp} className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
+                            {
+                                key_techs.map( (tech)=>(
+                                <span key = {tech}
+                                className="px-2 py-1 my-1 bg-gray-200 dark:bg-dark-200 round"
+                                >{tech}</span>
+                                ))}
                     </motion.div>
                 </motion.div >
 
