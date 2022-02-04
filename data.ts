@@ -90,7 +90,7 @@ export const tools:ISkill [] = [
 
 export const projects:IProject[] = [ 
     {
-
+        id:1,
         name: "Qt HMI interface development to pilot a motor",
         description: 
             "This project allows to monitor the current sensing in a motor",
@@ -102,7 +102,7 @@ export const projects:IProject[] = [
 
     },
     {
-        
+        id:2,
         name: "Embedded Image Classification Prototype",
         description: 
             "Image Classification Microcontroller (Edge computing)",
@@ -114,7 +114,7 @@ export const projects:IProject[] = [
 
     },
     {
-        
+        id:3,
         name: "FPGA HDMI image generator",
         description: 
             "HDMI 1.0 protocol implementation in a FPGA",

@@ -19,8 +19,6 @@ const ServiceCard:FunctionComponent<{service:IService}> = ({
                 <h4 className="font-bold">{title}</h4>
                 <p dangerouslySetInnerHTML={createMarkup()}  />
             </div>
-
-
         </div>
     )
 }
