@@ -2,8 +2,8 @@ import {RiComputerLine} from 'react-icons/ri'
 import { IProject, IService, ISkill } from './type';
 import { SiCplusplus } from "react-icons/si";
 import { GiCircuitry } from "react-icons/gi";
-import {BsCircleFill} from 'react-icons/bs'
-
+import {BsCircleFill} from 'react-icons/bs';
+import {DiPython} from 'react-icons/di';
 
 export const services:IService[] = [
 
@@ -23,6 +23,11 @@ export const services:IService[] = [
         about: "I create and prepare VHDL designs with creative solutions",
         Icon: RiComputerLine,
     },
+    {
+        title: "Python Developer",
+        about: "Develop back-end components to improve responsiveness and overall performance",
+        Icon: DiPython,
+    },
 
 ]
 
@@ -30,17 +35,17 @@ export const services:IService[] = [
 export const languages:ISkill [] = [
     {
         name:'Python',
-        level: '70%',
+        level: '90%',
         Icon: BsCircleFill
     },
     {
         name:'Javascript',
-        level: '70%',
+        level: '65%',
         Icon: BsCircleFill
     },
     {
         name:'React',
-        level: '70%',
+        level: '65%',
         Icon: BsCircleFill
     },
     {

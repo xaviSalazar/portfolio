@@ -14,7 +14,7 @@ const index = () => {
             initial="initial"
             animate="animate"
             exit="exit">
-            <h6 className='my-3 font-medium'>I am a current student in Master 2 Embedded Systems program. I have an Electrical Engineering Bachelor, so I have knowledge in microelectronics and semiconductors.</h6>
+            <h6 className='my-3 font-medium'>I am a passionate learner and I seek out new knowledge and I am actively developing new skills</h6>
             <div className='p-4 mt-5 bg-gray-400 dark:bg-dark-100 flex-grow'
             style = {{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}>
                 <h6 className='my-3 text-x1 font-bold tracking-wide'>
