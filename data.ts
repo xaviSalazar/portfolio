@@ -103,7 +103,7 @@ export const projects:IProject[] = [
     },
     {
         id:2,
-        name: "Embedded Image Classification Prototype",
+        name: "Edge Computing Image Classification system",
         description: 
             "Image Classification Microcontroller (Edge computing)",
         image_path: "/images/pcbcircuit.jpg",
@@ -118,7 +118,7 @@ export const projects:IProject[] = [
         name: "FPGA HDMI image generator",
         description: 
             "HDMI 1.0 protocol implementation in a FPGA",
-        image_path: "/images/vhdl.jpg",
+        image_path: "/images/fpga.jpg",
         deployed_url: "https://github.com/orgs/PGE-M2SME/dashboard",
         github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
         category : ["VHDL"],
