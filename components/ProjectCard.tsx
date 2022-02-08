@@ -5,6 +5,7 @@ import { MdClose } from "react-icons/md"
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import { stagger, fadeInUp } from "../animations"
+import { prefix } from '../prefix.js'
 
 const ProjectCard:FunctionComponent< { 
     project:IProject;
@@ -25,10 +26,8 @@ const ProjectCard:FunctionComponent< {
     setShowDetail,
 }) => {
 
-    const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
     const myLoader = () => {
-        return `${prefix}/public/image_path`; // REPLACE WITH YOUR IMAGE DIRECTORY
+        return `${prefix}${image_path}`; // REPLACE WITH YOUR IMAGE DIRECTORY
       }   
 
     return (
