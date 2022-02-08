@@ -25,8 +25,10 @@ const ProjectCard:FunctionComponent< {
     setShowDetail,
 }) => {
 
+    const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
     const myLoader = () => {
-        return image_path; // REPLACE WITH YOUR IMAGE DIRECTORY
+        return `${prefix}/image_path`; // REPLACE WITH YOUR IMAGE DIRECTORY
       }   
 
     return (
