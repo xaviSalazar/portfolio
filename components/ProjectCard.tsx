@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import { stagger, fadeInUp } from "../animations"
 
-
 const ProjectCard:FunctionComponent< { 
     project:IProject;
     showDetail:null | number;
@@ -26,11 +25,14 @@ const ProjectCard:FunctionComponent< {
     setShowDetail,
 }) => {
 
-
+    const myLoader = () => {
+        return image_path; // REPLACE WITH YOUR IMAGE DIRECTORY
+      }   
 
     return (
         <div >
             <Image 
+                loader={myLoader}
                 src={image_path} 
                 alt={name} 
                 className="cursor-pointer" 
@@ -62,6 +64,7 @@ const ProjectCard:FunctionComponent< {
                         variants={fadeInUp} 
                         className="border-4 border-gray-100">
                         <Image 
+                            loader = {myLoader}
                             src={image_path} 
                             alt={name} 
                             width="300"

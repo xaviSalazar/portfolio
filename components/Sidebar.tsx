@@ -4,6 +4,7 @@ import {GiTie} from 'react-icons/gi'
 import {useTheme} from 'next-themes'
 import Image from 'next/image'
 
+
 const Sidebar = () => {
 
     const {theme, setTheme} = useTheme();
@@ -12,10 +13,15 @@ const Sidebar = () => {
         setTheme(theme=="light"?"dark":"light");
     }
 
+    const myLoader = () => {
+        return 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1648684800&v=beta&t=JVFrpWHVvRRNdLzlU7C5PEH_Q1geeDIuYuFyWhMrAM8'
+      }
+
 
   return (
   <div>
       <Image
+        loader = {myLoader}
         src = 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1648684800&v=beta&t=JVFrpWHVvRRNdLzlU7C5PEH_Q1geeDIuYuFyWhMrAM8'
         alt='avatar'
         className='mx-auto border rounded-full'
