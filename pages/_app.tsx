@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
   <ThemeProvider attribute='class'>
-  <div className= 'grid grid-cols-1'>
+  <div >
 
   <div className="p-2 sticky top-0 bg-green-500 text-right">
       < button 
