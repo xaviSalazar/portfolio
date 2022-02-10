@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { stagger, fadeInUp } from "../animations"
 import { prefix } from '../prefix.js'
 
+
 const ProjectCard:FunctionComponent< { 
     project:IProject;
     showDetail:null | number;

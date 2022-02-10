@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import {ThemeProvider} from 'next-themes'
 import { AnimatePresence } from "framer-motion"
 import { useState } from 'react'
+import { RiWechat2Line } from 'react-icons/ri'
 
 function MyApp({ Component, pageProps, router }) {
 
@@ -14,11 +15,11 @@ function MyApp({ Component, pageProps, router }) {
   <div className= 'grid grid-cols-1'>
 
   <div className="p-2 sticky top-0 bg-green-500 text-right">
-      <button 
+      < button 
         className="absolute p-1 rounded-full top-3 right-3 focus:outline-none bg-gray-200 dark:bg-dark-200"
         onClick={() => {setChatButton(!chatButton)}}
       >
-        Talk to me !
+        <RiWechat2Line size={40} />
       </button>
   </div>
 
@@ -39,14 +40,9 @@ function MyApp({ Component, pageProps, router }) {
       ) : <p>HOLA MUNDO</p>
 
     }
-
-
-  
   </div>
   </ThemeProvider>
   )
-
-  
 }
 
 export default MyApp
