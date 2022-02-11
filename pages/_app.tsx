@@ -5,6 +5,7 @@ import {ThemeProvider} from 'next-themes'
 import { AnimatePresence } from "framer-motion"
 import { useState, useEffect } from 'react'
 import { RiWechat2Line } from 'react-icons/ri'
+import { AiOutlineCloseCircle } from 'react-icons/ai'
 import Bot  from '../components/Bot'
 
 
@@ -22,7 +23,10 @@ function MyApp({ Component, pageProps, router }) {
         className="absolute p-1 rounded-full top-3 right-3 focus:outline-none bg-gray-200 dark:bg-dark-200"
         onClick={() => {setChatButton(!chatButton)}}
       >
-        <RiWechat2Line size={40} />
+        {
+          chatButton ? 
+        <RiWechat2Line size={40} /> : <AiOutlineCloseCircle size={20} />
+        }
       </button>
   </div>
 
