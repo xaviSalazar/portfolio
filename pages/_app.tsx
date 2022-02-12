@@ -18,17 +18,16 @@ function MyApp({ Component, pageProps, router }) {
   <ThemeProvider attribute='class'>
   <div>
 
-  <div className="p-2 sticky top-0 bg-green-500 text-right">
+ 
       < button 
-        className="absolute p-1 rounded-full top-3 right-3 focus:outline-none bg-gray-200 dark:bg-dark-200"
         onClick={() => {setChatButton(!chatButton)}}
       >
         {
           chatButton ? 
-        <RiWechat2Line size={40} /> : <AiOutlineCloseCircle size={20} />
+        <RiWechat2Line size={40} className="fixed p-1 rounded-full bottom-0 right-0 focus:outline-none bg-gray-200 dark:bg-dark-200"/> : <AiOutlineCloseCircle size={30} className="fixed p-1 rounded-full top-3 right-3 focus:outline-none bg-gray-200 dark:bg-dark-200" />
         }
       </button>
-  </div>
+
 
     {
       chatButton ? (
