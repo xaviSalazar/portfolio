@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react"
 
-export const ChatLayout = ( {onChange, onClick,messages} ) => {
+export const ChatLayout = ( {onChange, onClick,messages, msg} ) => {
 
 
    const updateChatText = messages.map( (msg,index) => {
@@ -48,6 +48,7 @@ export const ChatLayout = ( {onChange, onClick,messages} ) => {
                   className="border rounded-2xl border-transparent w-full focus:outline-none text-sm h-10 flex items-center bg-white"
                   placeholder="Type your message...."
                   onChange={ onChange }
+                  value = { msg }
 
                 />
               </div>
