@@ -10,14 +10,14 @@ export const ChatLayout = ( {onChange, onClick,messages} ) => {
           if(msg.name === "bot")
           {
             return (
-            <div key = {index} className="other break-all mt-2  ml-5 rounded-bl-none float-none bg-gray-300 mr-auto rounded-2xl p-2">
-            {msg.message}
+            <div key = {index} className="other mt-2  ml-5 rounded-bl-none float-none bg-gray-300 mr-auto rounded-2xl p-2">
+            <p className="inline-flex">{msg.message}</p>
             </div>  
             )
           } else {
             return (
             <div  key = {index}  className="w-max ml-auto break-all mt-2 mb-1 p-2 rounded-br-none bg-blue-500 rounded-2xl text-white text-left mr-5">
-            {msg.message}
+            <p className="inline-flex">{msg.message}</p>
             </div>
             )
 

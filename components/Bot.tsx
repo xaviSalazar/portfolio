@@ -5,10 +5,10 @@ import  { ChatLayout }  from "./chatLayout";
 var ws = null;
 var messages = []
 
-messages.unshift( { name : "bot", message: 'Hi welcome to my beta Bot, currently I am still testing ai models and playing with web dev for fun '} )
+messages.unshift( { name : "bot", message: 'Hi welcome to my Beta version Bot, I am currently testing some AI models and also searching the best hosting site so you can communicate with my chatbot'} )
 messages.unshift( { name : "bot", message: 'To let you know I am a C++ Developer'} )
-messages.unshift( { name : "bot", message: 'I am currently working in a mission at VEDECOM where I develop C++ drivers'} )
-messages.unshift( { name : "bot", message: 'I am always using Linux or any Embedded Linux variant'} )
+messages.unshift( { name : "bot", message: 'I am currently working in a mission at VEDECOM where I develop C++ drivers in a Linux Environment'} )
+
 
 
 
