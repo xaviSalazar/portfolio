@@ -26,18 +26,17 @@ export const ChatLayout = ( {onChange, onClick,messages} ) => {
     )
 
 
-
     return (
 
-        <div className=" flex-col h-screen w-screen bg-white">
+        <div className="grid grid-rows-12 fixed bottom-4 right-4 box-border z-20 h-96 w-80 border-4 border-green-600 bg-white">
             
-          <div id="chat"  className="flex flex-col mt-2 flex-col-reverse overflow-y-scroll space-y-3 mb-20 pb-3">
+          <div id="chat"  className="row-start-1 row-end-10 flex mt-2 flex-col-reverse overflow-y-scroll space-y-3 mb-1 pb-3 ">
                 
               {updateChatText}
         
           </div>
           
-          <div className="flex flex-row  items-center  my-2 w-full">
+           <div className="flex flex-row  items-center  my-2 w-full">
             <div
               className="ml-2 flex flex-row border-gray items-center w-full border rounded-3xl h-12 px-2"
             >
@@ -46,9 +45,10 @@ export const ChatLayout = ( {onChange, onClick,messages} ) => {
                 <input
                   type="text"
                   id="message"
-                  className="border rounded-2xl border-transparent w-full focus:outline-none text-sm h-10 flex items-center"
+                  className="border rounded-2xl border-transparent w-full focus:outline-none text-sm h-10 flex items-center bg-white"
                   placeholder="Type your message...."
                   onChange={ onChange }
+
                 />
               </div>
         
@@ -77,7 +77,7 @@ export const ChatLayout = ( {onChange, onClick,messages} ) => {
               </button>
             </div>
         
-          </div>
+          </div> 
         </div>
         
                 )

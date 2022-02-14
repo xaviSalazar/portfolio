@@ -24,13 +24,12 @@ function MyApp({ Component, pageProps, router }) {
       >
         {
           chatButton ? 
-        <RiWechat2Line size={40} className="fixed p-1 rounded-full bottom-0 right-0 focus:outline-none bg-gray-200 dark:bg-dark-200"/> : <AiOutlineCloseCircle size={30} className="fixed p-1 rounded-full top-3 right-3 focus:outline-none bg-gray-200 dark:bg-dark-200" />
+        <RiWechat2Line size={40} className="fixed p-1 rounded-full bottom-0 right-0 focus:outline-none bg-gray-200 dark:bg-dark-200"/> : <AiOutlineCloseCircle size={30} className="fixed p-1 z-30 rounded-full bottom-0 right-0 focus:outline-none bg-gray-200 dark:bg-dark-200" />
         }
       </button>
 
 
-    {
-      chatButton ? (
+    
  
   <div className='grid grid-cols-12 gap-6 px-5 lg:px-48 my-14 sm:px-20 md:px-32' >
     <div  className='col-span-12 bg-white dark:bg-dark-500 lg:col-span-3 rounded-2x1 p-4 text-center shadow-custom-light dark:shadow-custom-dark'>
@@ -43,6 +42,9 @@ function MyApp({ Component, pageProps, router }) {
         </AnimatePresence>
     </div>
   </div>
+  {
+      chatButton ? (
+        <div> </div>
       ) : <Bot/>
 
     }
