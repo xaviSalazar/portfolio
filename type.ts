@@ -26,4 +26,4 @@ export interface IProject {
 }
 
 
-export type Category = "C++" | "C" | "Qt Creator" | "VHDL" | "mongo";
+export type Category = "C++" | "C" | "Qt Creator" | "VHDL" | "mongo" | "PCB";

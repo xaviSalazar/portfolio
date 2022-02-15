@@ -96,13 +96,13 @@ export const tools:ISkill [] = [
 export const projects:IProject[] = [ 
     {
         id:1,
-        name: "Qt HMI interface development to pilot a motor",
+        name: "QtCreator Human-Machine interface to pilot a motor",
         description: 
-            "This project allows to monitor the current sensing in a motor",
+            "This project allows to monitor the current sensing in a motor. The project was validated with an oscilloscope, left side(IHM) and right side(oscilloscope measures) ",
         image_path: "/images/ihmmotor.jpg",
         deployed_url: "https://github.com/xaviSalazar/IHMstage",
         github_url: "https://github.com/xaviSalazar/IHMstage",
-        category : ["C++"],
+        category : ["C++","Qt Creator"],
         key_techs :["C++","Qt Creator"],
 
     },
@@ -114,7 +114,7 @@ export const projects:IProject[] = [
         image_path: "/images/pcbcircuit.jpg",
         deployed_url: "private",
         github_url: "private",
-        category : ["C++"],
+        category : ["C++","PCB"],
         key_techs :["C++","ESP32"],
 
     },
@@ -128,6 +128,18 @@ export const projects:IProject[] = [
         github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
         category : ["VHDL"],
         key_techs :["VHDL","FPGA"],
+
+    },
+    {
+        id:4,
+        name: "LTE-CAT module PCB design and production",
+        description: 
+            "I conceived the PCB routing in a constrained board due to limiting size. This card allows to connect any Linux or Microcontroller to the mobile internet",
+        image_path: "/images/InternetModule.jpg",
+        deployed_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+        github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+        category : ["PCB"],
+        key_techs :["PCB","BOARD DESIGN"],
 
     },
 ]

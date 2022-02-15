@@ -54,7 +54,7 @@ const ProjectCard:FunctionComponent< {
             {
                 showDetail === id && (
     
-            <div className="absolute grid md:grid-cols-2 top-20 left-0 z-10 h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2 md:p-10 rounded-lg">
+            <div className="absolute grid md:grid-cols-2 top-0 left-0 z-10 h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-2 md:p-10 rounded-lg">
 
                 <motion.div 
                     variants={stagger} 
