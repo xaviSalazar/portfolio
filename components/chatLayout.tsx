@@ -48,6 +48,7 @@ export const ChatLayout = ( {onChange, onClick,messages, msg} ) => {
                   className="border rounded-2xl border-transparent w-full focus:outline-none text-sm h-10 flex items-center bg-white"
                   placeholder="Type your message...."
                   onChange={ onChange }
+                  autoComplete = "off"
                   value = { msg }
 
                 />
