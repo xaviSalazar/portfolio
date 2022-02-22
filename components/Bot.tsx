@@ -17,7 +17,7 @@ export default function Bot() {
 
   const [Message, setMessage] = useState('');
 
-  if (ws==null) ws = new WebSocket ('ws://stormy-mountain-52583.herokuapp.com/');
+  if (ws==null) ws = new WebSocket ('wss://stormy-mountain-52583.herokuapp.com/');
 
      ws.onopen = () => {
     console.log("connected")
