@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps, router }) {
         <div> </div>
       ) : <Bot/>
 
-    }
+  }
   </div>
   </ThemeProvider>
   )

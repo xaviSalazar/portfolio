@@ -16,15 +16,22 @@ messages.unshift( { name : "bot", message: 'What would you like to know?'} )
 export default function Bot() {
 
   const [Message, setMessage] = useState('');
+  const [connectStatus, setConnectStatus] = useState(true);
+ 
+  if (ws==null) 
+  {
+    setConnectStatus(false);
+    ws = new WebSocket ('wss://stormy-mountain-52583.herokuapp.com/');
+  } 
 
-  if (ws==null) ws = new WebSocket ('wss://stormy-mountain-52583.herokuapp.com/');
-
-     ws.onopen = () => {
+    ws.onopen = () => {
     console.log("connected")
+    setConnectStatus(true)
     }
 
     ws.onclose = () => {
     console.log("Connection closed")
+    setConnectStatus(false)
   }
 
    ws.onmessage = (ev) => {
@@ -48,8 +55,7 @@ export default function Bot() {
     }
 
     return (
-         < ChatLayout onChange={onChange} onClick={onClick} messages = {messages} msg = {Message}/>
+         < ChatLayout onChange={onChange} onClick={onClick} messages = {messages} msg = {Message} connectStatus = {connectStatus}/>
     )
    
-
     }

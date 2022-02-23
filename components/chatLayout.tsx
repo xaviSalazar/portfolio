@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react"
 
-export const ChatLayout = ( {onChange, onClick,messages, msg} ) => {
+export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) => {
 
 
    const updateChatText = messages.map( (msg,index) => {
@@ -35,11 +35,14 @@ export const ChatLayout = ( {onChange, onClick,messages, msg} ) => {
               {updateChatText}
         
           </div>
-          
+          {
+          connectStatus ? (
+
            <div className="flex flex-row  items-center  my-2 w-full">
-            <div
-              className="ml-2 flex flex-row border-gray items-center w-full border rounded-3xl h-12 px-2"
-            >
+              <div
+                className="ml-2 flex flex-row border-gray items-center w-full border rounded-3xl h-12 px-2"
+              >
+                
            
               <div className="w-full">
                 <input
@@ -52,7 +55,7 @@ export const ChatLayout = ( {onChange, onClick,messages, msg} ) => {
                   value = { msg }
 
                 />
-              </div>
+              </div> 
         
             </div>
         
@@ -77,11 +80,10 @@ export const ChatLayout = ( {onChange, onClick,messages, msg} ) => {
                   ></path>
                 </svg>
               </button>
-            </div>
-        
-          </div> 
+            </div> 
+          </div> ) : <div className="w-full"> <p> .....Hold on connecting to server.... </p> </div>
+              }
         </div>
-        
                 )
 
 }
