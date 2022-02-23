@@ -11,8 +11,6 @@ messages.unshift( { name : "bot", message: 'I am currently working in a mission 
 messages.unshift( { name : "bot", message: 'What would you like to know?'} )
 
 
-
-
 export default function Bot() {
 
   const [Message, setMessage] = useState('');

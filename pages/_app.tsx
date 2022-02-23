@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps, router }) {
       >
         {
           chatButton ? 
-        <RiWechat2Line size={50} className=" animate-bounce fixed p-1 rounded-full bottom-0 right-0 focus:outline-none bg-gray-200 dark:bg-dark-200"/> : <AiOutlineCloseCircle size={30} className="fixed p-1 z-30 rounded-full bottom-0 right-0 focus:outline-none bg-gray-200 dark:bg-dark-200" />
+        <RiWechat2Line size={50} className=" animate-bounce fixed p-1 rounded-full bottom-0 right-0 focus:outline-none bg-rose-500 dark:bg-dark-200"/> : <AiOutlineCloseCircle size={30} className="fixed p-1 z-30 rounded-full bottom-0 right-0 focus:outline-none bg-gray-200 dark:bg-dark-200" />
         }
       </button>
 
