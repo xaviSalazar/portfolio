@@ -81,7 +81,11 @@ export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) =
                 </svg>
               </button>
             </div> 
-          </div> ) : <div className="w-full"> <p> .....Hold on connecting to server.... </p> </div>
+          </div> ) : <div className="w-full">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+            <p> .....Hold on connecting to server.... </p> </div>
+              
               }
         </div>
                 )
