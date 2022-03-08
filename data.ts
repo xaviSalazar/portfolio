@@ -108,18 +108,6 @@ export const projects:IProject[] = [
     },
     {
         id:2,
-        name: "Edge Computing Image Classification system",
-        description: 
-            "Image Classification Microcontroller (Edge computing)",
-        image_path: "/images/pcbcircuit.jpg",
-        deployed_url: "private",
-        github_url: "private",
-        category : ["C++","PCB"],
-        key_techs :["C++","ESP32"],
-
-    },
-    {
-        id:3,
         name: "FPGA HDMI image generator",
         description: 
             "HDMI 1.0 protocol implementation in a FPGA",
@@ -130,16 +118,28 @@ export const projects:IProject[] = [
         key_techs :["VHDL","FPGA"],
 
     },
-    {
-        id:4,
-        name: "LTE-CAT module PCB design and production",
-        description: 
-            "I conceived the PCB routing in a constrained board due to limiting size. This card allows to connect any Linux or Microcontroller to the mobile internet",
-        image_path: "/images/InternetModule.jpg",
-        deployed_url: "https://github.com/orgs/PGE-M2SME/dashboard",
-        github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
-        category : ["PCB"],
-        key_techs :["PCB","BOARD DESIGN"],
+    // {
+    //     id:3,
+    //     name: "Edge Computing Image Classification system",
+    //     description: 
+    //         "Image Classification Microcontroller (Edge computing)",
+    //     image_path: "/images/pcbcircuit.jpg",
+    //     deployed_url: "private",
+    //     github_url: "private",
+    //     category : ["C++","PCB"],
+    //     key_techs :["C++","ESP32"],
 
-    },
+    // },
+    // {
+    //     id:4,
+    //     name: "LTE-CAT module PCB design and production",
+    //     description: 
+    //         "I conceived the PCB routing in a constrained board due to limiting size. This card allows to connect any Linux or Microcontroller to the mobile internet",
+    //     image_path: "/images/InternetModule.jpg",
+    //     deployed_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+    //     github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+    //     category : ["PCB"],
+    //     key_techs :["PCB","BOARD DESIGN"],
+
+    // },
 ]
