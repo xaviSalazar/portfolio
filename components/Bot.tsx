@@ -9,7 +9,7 @@ var messages = []
 
 messages.unshift( { name : "bot", message: 'Hi welcome to my Beta version Bot, I am currently testing some NLP knowledge, but I need data!!!'} )
 messages.unshift( { name : "bot", message: 'To let you know I am a C++ Developer'} )
-messages.unshift( { name : "bot", message: 'I am currently working in a mission at VEDECOM where I develop C++ drivers in a Linux Environment'} )
+messages.unshift( { name : "bot", message: 'I am currently developing C++ drivers in an Embedded System'} )
 messages.unshift( { name : "bot", message: 'What would you like to know?'} )
 
 export default function Bot() {
