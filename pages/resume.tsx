@@ -39,7 +39,7 @@ const resume = () => {
                 <div>
                     <h5 className="my-2 text-xl font-bold">Embedded Systems Intern</h5>
                     <p className="font-semibold"> COCOPARKS (March 2021-September 2021) </p>
-                    <p className="my-3">Responsible for developing an embedded system image classification</p>
+                    <p className="my-3">Responsible for developing an autonomous Embedded System</p>
                 </div>
 
                 <div>
