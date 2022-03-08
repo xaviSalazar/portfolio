@@ -1,4 +1,5 @@
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import { ImBlogger } from 'react-icons/im'
 import {GoLocation} from 'react-icons/go'
 import {GiTie} from 'react-icons/gi'
 import {useTheme} from 'next-themes'
@@ -52,6 +53,9 @@ const Sidebar = () => {
         <div className='flex justify-around w-9/12 mx-auto my-5 text-green md:w-full'>
             <a href='https://github.com/xaviSalazar' target="_blank" rel="noopener noreferrer">
                 <AiFillGithub className='w-8 h-8 cursor-pointer' />
+            </a>
+            <a href='https://xavisalazar.github.io/blog-debut/' target="_blank" rel="noopener noreferrer">
+                <ImBlogger className='w-8 h-8 cursor-pointer' />
             </a>
             <a href='https://www.linkedin.com/in/victor-salazar-32513614a' target="_blank" rel="noopener noreferrer">
                 <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
