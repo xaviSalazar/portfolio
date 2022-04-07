@@ -16,7 +16,7 @@ const Sidebar = () => {
     }
 
     const myLoader = () => {
-        return 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1648684800&v=beta&t=JVFrpWHVvRRNdLzlU7C5PEH_Q1geeDIuYuFyWhMrAM8'
+        return 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1654732800&v=beta&t=3huz9fTzcrPCL3Bph8KoEdUlJ3-BmUf0FT8dMYzhvy8'
       }
 
       const cvPath = () => {
@@ -28,7 +28,7 @@ const Sidebar = () => {
   <div>
       <Image
         loader = {myLoader}
-        src = 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1648684800&v=beta&t=JVFrpWHVvRRNdLzlU7C5PEH_Q1geeDIuYuFyWhMrAM8'
+        src = 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1654732800&v=beta&t=3huz9fTzcrPCL3Bph8KoEdUlJ3-BmUf0FT8dMYzhvy8'
         alt='avatar'
         className='mx-auto border rounded-full'
         height="128"
