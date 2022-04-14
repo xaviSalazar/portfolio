@@ -50,15 +50,18 @@ const Sidebar = () => {
             <GiTie className='w-6 h-6'/> Download resume
         </a>
         {/* //social icons */}
-        <div className='flex justify-around w-9/12 mx-auto my-5 text-green md:w-full'>
+        <div className='flex justify-around w-9/12 mx-auto my-5 md:w-full'>
             <a href='https://github.com/xaviSalazar' target="_blank" rel="noopener noreferrer">
                 <AiFillGithub className='w-8 h-8 cursor-pointer' />
+                <span >Github</span>
             </a>
             <a href='https://xavisalazar.github.io/blog-debut/' target="_blank" rel="noopener noreferrer">
                 <ImBlogger className='w-8 h-8 cursor-pointer' />
+                <span >Blog</span>
             </a>
             <a href='https://www.linkedin.com/in/victor-salazar-32513614a' target="_blank" rel="noopener noreferrer">
                 <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
+                <span >Linkedin</span>
             </a>
         </div>
         {/* address */}
