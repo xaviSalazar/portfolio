@@ -15,24 +15,11 @@ const resume = () => {
 
             <div className="grid gap-6 md:grid-cols-2">
 
-                 <motion.div variants={fadeInUp} initial = "initial" animate="animate" >
-                <h1 className="my-3 text-3xl font-bold">Education</h1>
-                <div>
-                    <h5 className="my-2 text-x1 font-bold">Embedded Systems Master</h5>
-                    <p className="my-3">Université Paul Sabatier (2019-2021) </p>
-                </div>
-
-                <div>
-                    <h5 className="my-2 text-x1 font-bold">Electrical Engineering Bachelor</h5>
-                    <p className="my-3">Universidad San Francisco de Quito (2013-2018) </p>
-                </div>
-                </motion.div> 
-
                 <motion.div variants={fadeInUp} initial = "initial" animate="animate" >
                 <h5 className="my-3 text-3xl font-bold">Experience</h5>
                 <div>
                     <h5 className="my-2 text-xl font-bold">C++ Developer</h5>
-                    <p className="font-semibold"> ADENTIS (2021-Present) </p>
+                    <p className="font-semibold"> ADENTIS (October 2021-Present) </p>
                     <p className="my-3">C++ drivers development</p>
                 </div>
 
@@ -49,10 +36,20 @@ const resume = () => {
                 </div>
                 </motion.div > 
 
+                <motion.div variants={fadeInUp} initial = "initial" animate="animate" >
+                <h1 className="my-3 text-3xl font-bold">Education</h1>
+                <div>
+                    <h5 className="my-2 text-x1 font-bold">Embedded Systems Master</h5>
+                    <p className="my-3">Université Paul Sabatier (2019-2021) </p>
+                </div>
+
+                <div>
+                    <h5 className="my-2 text-x1 font-bold">Electrical Engineering Bachelor</h5>
+                    <p className="my-3">Universidad San Francisco de Quito (2013-2018) </p>
+                </div>
+                </motion.div> 
+
              </div>
-
-
-
 
     {/* // language & tools */}
 
