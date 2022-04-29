@@ -1,7 +1,25 @@
 import React, { FunctionComponent } from "react"
+import { useState } from "react";
 
 export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) => {
 
+  const [connectVictor, setConnectVictor] = useState(false);
+
+  const [clientName, setclientName] = useState("");
+
+  const callVictor = () => {
+    setConnectVictor(true)
+  }
+
+  const closeVictor = () => {
+    setConnectVictor(false)
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    console.log('form submitted ✅');
+  };
 
    const updateChatText = messages.map( (msg,index) => {
 
@@ -28,7 +46,13 @@ export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) =
 
     return (
 
+        !connectVictor ? 
+
         <div className="grid grid-rows-12 fixed bottom-4 right-4 box-border z-20 h-96 w-80 border-4 border-green-600 bg-white">
+
+          <button
+          className="bg-red-400 rounded-full"
+          onClick={callVictor}>Text to Victor directly</button>
             
           <div id="chat"  className="row-start-1 row-end-10 flex mt-2 flex-col-reverse overflow-y-scroll space-y-3 mb-1 pb-3 ">
                 
@@ -85,10 +109,24 @@ export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) =
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
 
-            <p className="relative text-white font-bold bg-red-500"> .....Hold on connecting to server.... </p> </div>)
-              
+            <p className="relative text-white font-bold bg-red-500"> .....Hold on connecting to server.... </p> 
+            </div>)  
               }
         </div>
-                )
+
+: <div className="grid grid-rows-12 fixed bottom-4 right-4 box-border z-20 h-96 w-80 border-4 border-green-600 bg-white">
+
+  <button className="bg-red-400 rounded-full" onClick={closeVictor}>Return to chatbot</button>
+          {/* <p>Currently I am still implementing this feature</p> */}
+          <form onSubmit={handleSubmit}>
+            <label>
+              Enter your Name:
+              <input className ="border-2 border-black"  type="text" name="name" onChange={(e) => setclientName(e.target.value)}/>
+            </label>
+          </form>
+
+  <button className="bg-sky-400 rounded-full" onClick={handleSubmit}>Connect with Victor</button>
+
+  </div>  ) 
 
 }

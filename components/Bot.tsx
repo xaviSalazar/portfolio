@@ -3,6 +3,7 @@ import { Component, useEffect, useState } from "react";
 import  { ChatLayout }  from "./chatLayout";
 import { RiWechat2Line } from 'react-icons/ri'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
+import socket from '../pages/api/socket'
 
 var ws = null;
 var messages = []
@@ -19,9 +20,17 @@ export default function Bot() {
   const [connectStatus, setConnectStatus] = useState(false);
  
   const openConnection = () => {
-    
+
+    // internal testing
+    const username = "variable";
+    socket.auth = {username};
+    socket.connect();
+
     setChatButton(true)
+
     ws = new WebSocket ('wss://stormy-mountain-52583.herokuapp.com/');
+    
+   
 
     ws.onopen = () => {
       console.log("connected")
