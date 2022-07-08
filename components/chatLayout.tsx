@@ -5,7 +5,7 @@ export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) =
 
    const updateChatText = messages.map( (msg,index) => {
 
-          console.log('variable')
+          //console.log('variable')
 
           if(msg.name === "bot")
           {
@@ -51,6 +51,9 @@ export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) =
                   className="border rounded-2xl border-transparent w-full focus:outline-none text-sm h-10 flex items-center bg-white"
                   placeholder="Type your message...."
                   onChange={ onChange }
+                  onKeyPress = { (event) => {
+                    event.key === "Enter" && onClick();
+                  }}
                   autoComplete = "off"
                   value = { msg }
 

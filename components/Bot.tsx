@@ -12,9 +12,11 @@ messages.unshift( { name : "bot", message: 'To let you know I am a C++ Developer
 messages.unshift( { name : "bot", message: 'I am currently developing C++ drivers in an Embedded System'} )
 messages.unshift( { name : "bot", message: 'What would you like to know?'} )
 
+
+
 export default function Bot() {
 
-
+  const [prueba, setPrueba] = useState(messages);
   const [Message, setMessage] = useState('');
   const [chatButton, setChatButton] = useState(false);
   const [connectStatus, setConnectStatus] = useState(false);
@@ -40,8 +42,10 @@ export default function Bot() {
 
     ws.onmessage = (ev) => {
       messages.unshift({ name : "bot", message: ev.data})
-      console.log(messages)
-      setMessage(' ')
+      setPrueba(arr=>[ ...arr, { name : "bot", message: ev.data}])
+      //console.log(prueba)
+      //console.log("mesage received")
+      setMessage('')
     }
 
     ws.onerror = (ev) => {
@@ -56,9 +60,19 @@ export default function Bot() {
   }
 
   const onClick = (e) => {
-      messages.unshift({ name :"me", message :Message})
-      ws.send(Message)
-      setMessage('')
+
+      if(Message === '')
+      {
+
+      } else {
+        messages.unshift({ name :"me", message :Message})
+        //setPrueba(arr=>[ ...arr, { name : "me", message: Message}])
+        console.log("onClick")
+        console.log(prueba)
+        ws.send(Message)
+        setMessage('')
+      }
+      //console.log(prueba)
     }
 
     const onChange = (e) => {
