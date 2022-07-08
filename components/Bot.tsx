@@ -14,9 +14,14 @@ messages.unshift( { name : "bot", message: 'What would you like to know?'} )
 
 export default function Bot() {
 
+
   const [Message, setMessage] = useState('');
   const [chatButton, setChatButton] = useState(false);
   const [connectStatus, setConnectStatus] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(openConnection, 2000);
+  }, []);
  
   const openConnection = () => {
     
