@@ -16,7 +16,8 @@ const Sidebar = () => {
     }
 
     const myLoader = () => {
-        return 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1654732800&v=beta&t=3huz9fTzcrPCL3Bph8KoEdUlJ3-BmUf0FT8dMYzhvy8'
+        //return 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1654732800&v=beta&t=3huz9fTzcrPCL3Bph8KoEdUlJ3-BmUf0FT8dMYzhvy8'
+        return `${prefix}/images/profile.jpg`;
       }
 
       const cvPath = () => {
@@ -28,12 +29,12 @@ const Sidebar = () => {
   <div>
       <Image
         loader = {myLoader}
-        src = 'https://media-exp1.licdn.com/dms/image/C4D03AQHUYq-bBHQ8yw/profile-displayphoto-shrink_200_200/0/1614103725738?e=1654732800&v=beta&t=3huz9fTzcrPCL3Bph8KoEdUlJ3-BmUf0FT8dMYzhvy8'
+        src = '/images/profile.jpg'
         alt='avatar'
-        className='mx-auto border rounded-full'
-        height="128"
         width="128"
-        layout = "intrinsic"
+        height="128" 
+        className='mx-auto border rounded-full'
+        layout = "fixed"
         />
 
         <h3 className='my-4 text-3x1 font-medium tracking wider font-kaushan'>
