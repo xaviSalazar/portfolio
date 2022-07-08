@@ -7,10 +7,10 @@ import { AiOutlineCloseCircle } from 'react-icons/ai'
 var ws = null;
 var messages = []
 
-messages.unshift( { name : "bot", message: 'Hi welcome to my Beta version Bot, I am currently testing some NLP knowledge, but I need data!!!'} )
-messages.unshift( { name : "bot", message: 'To let you know I am a C++ Developer'} )
-messages.unshift( { name : "bot", message: 'I am currently developing C++ drivers in an Embedded System'} )
-messages.unshift( { name : "bot", message: 'What would you like to know?'} )
+messages.push( { name : "bot", message: 'Hi welcome to my Beta version Bot, I am currently testing some NLP knowledge, but I need data!!!'} )
+messages.push( { name : "bot", message: 'To let you know I am a C++ Developer'} )
+messages.push( { name : "bot", message: 'I am currently developing C++ drivers in an Embedded System'} )
+messages.push( { name : "bot", message: 'What would you like to know?'} )
 
 
 
@@ -59,20 +59,31 @@ export default function Bot() {
     ws.close();
   }
 
-  const onClick = (e) => {
+  const sendMessage = async () => {
+    if( Message !== '')
+    {
+      const messageData = {
+        name : "me",
+        message : Message
+      };
 
-      if(Message === '')
+      await ws.send(Message);
+
+      setPrueba(arr=>[ ...arr, messageData])
+    }
+    setMessage('')
+  }
+
+  const onClick = () => {
+      if(Message !== '')
       {
-
-      } else {
         messages.unshift({ name :"me", message :Message})
         //setPrueba(arr=>[ ...arr, { name : "me", message: Message}])
-        console.log("onClick")
-        console.log(prueba)
+        // console.log("onClick")
+        // console.log(prueba)
         ws.send(Message)
         setMessage('')
       }
-      //console.log(prueba)
     }
 
     const onChange = (e) => {
@@ -94,7 +105,7 @@ return (
       }
      { 
         chatButton ? (
-        < ChatLayout onChange={onChange} onClick={onClick} messages = {messages} msg = {Message} connectStatus = {connectStatus}/>
+        < ChatLayout onChange={onChange} onClick={sendMessage} messages = {prueba} msg = {Message} connectStatus = {connectStatus}/>
         ) : null
      }
     </div>

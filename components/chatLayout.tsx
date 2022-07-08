@@ -1,12 +1,21 @@
-import React, { FunctionComponent } from "react"
+import React, { FunctionComponent, useRef, useEffect } from "react"
 
 export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) => {
+
+  const bottom = useRef(null)
+
+  const scrollToBottom = () => {
+    bottom.current.scrollIntoView({ behavior: "smooth" })
+  }
+
+  useEffect(() => {
+    scrollToBottom()
+  }, [messages]);
 
 
    const updateChatText = messages.map( (msg,index) => {
 
           //console.log('variable')
-
           if(msg.name === "bot")
           {
             return (
@@ -30,9 +39,11 @@ export const ChatLayout = ( {onChange, onClick,messages, msg, connectStatus} ) =
 
         <div className="grid grid-rows-12 fixed bottom-4 right-4 box-border z-20 h-96 w-80 border-4 border-green-600 bg-white">
             
-          <div id="chat"  className="row-start-1 row-end-10 flex mt-2 flex-col-reverse overflow-y-scroll space-y-3 mb-1 pb-3 ">
+          <div id="chat"  className="row-start-1 row-end-10 flex mt-2 flex-col overflow-y-scroll space-y-3 mb-1 pb-3 ">
                 
+              
               {updateChatText}
+              <div ref={bottom}></div>
         
           </div>
           {
