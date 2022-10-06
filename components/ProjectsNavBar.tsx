@@ -31,6 +31,7 @@ const ProjectsNavBar:FunctionComponent<{handlerFilterCategory:Function,active:st
             <NavItem value="Qt Creator" {...props}/>
             <NavItem value="VHDL" {...props}/>
             <NavItem value="PCB" {...props}/>
+            <NavItem value="WEB" {...props}/>
         </div>
     )
 }

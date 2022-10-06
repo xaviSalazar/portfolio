@@ -118,28 +118,40 @@ export const projects:IProject[] = [
         key_techs :["VHDL","FPGA"],
 
     },
-    // {
-    //     id:3,
-    //     name: "Edge Computing Image Classification system",
-    //     description: 
-    //         "Image Classification Microcontroller (Edge computing)",
-    //     image_path: "/images/pcbcircuit.jpg",
-    //     deployed_url: "private",
-    //     github_url: "private",
-    //     category : ["C++","PCB"],
-    //     key_techs :["C++","ESP32"],
+    {
+        id:3,
+        name: "Legal-tech development",
+        description: 
+            "This is a prototype of a legal-tech website",
+        image_path: "/images/legal_tech.png",
+        deployed_url: "https://xavisalazar.github.io/legal-tech/",
+        github_url: "private",
+        category : ["WEB"],
+        key_techs :["React JS", "Javascript", "Node js"],
 
-    // },
-    // {
-    //     id:4,
-    //     name: "LTE-CAT module PCB design and production",
-    //     description: 
-    //         "I conceived the PCB routing in a constrained board due to limiting size. This card allows to connect any Linux or Microcontroller to the mobile internet",
-    //     image_path: "/images/InternetModule.jpg",
-    //     deployed_url: "https://github.com/orgs/PGE-M2SME/dashboard",
-    //     github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
-    //     category : ["PCB"],
-    //     key_techs :["PCB","BOARD DESIGN"],
+    },
+    {
+        id:4,
+        name: "CRM for whatsapp",
+        description: 
+            "This is a CRM for whatsapp currently using the latest api from META",
+        image_path: "/images/crm_whatsapp.png",
+        deployed_url: "https://xavisalazar.github.io/mui-whatsapp-app/",
+        github_url: "private",
+        category : ["WEB"],
+        key_techs :["React JS", "Javascript", "Node js"],
 
-    // },
+    },
+    {
+        id:5,
+        name: "LTE-CAT module PCB design and production",
+        description: 
+            "I conceived the PCB routing in a constrained board due to limiting size. This card allows to connect any Linux or Microcontroller to the mobile internet",
+        image_path: "/images/InternetModule.jpg",
+        deployed_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+        github_url: "https://github.com/orgs/PGE-M2SME/dashboard",
+        category : ["PCB"],
+        key_techs :["PCB","BOARD DESIGN"],
+
+    },
 ]
