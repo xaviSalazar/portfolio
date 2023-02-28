@@ -9,7 +9,7 @@ var messages = []
 
 messages.push( { name : "bot", message: 'Hi welcome to my Beta version Bot, I am currently testing some NLP knowledge, but I need data!!!'} )
 messages.push( { name : "bot", message: 'To let you know I am a C++ Developer'} )
-messages.push( { name : "bot", message: 'I am currently developing C++ drivers in an Embedded System'} )
+messages.push( { name : "bot", message: 'Server is probably down due Heroku hosting payment plan :('} )
 messages.push( { name : "bot", message: 'What would you like to know?'} )
 
 
