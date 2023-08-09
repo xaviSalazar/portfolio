@@ -20,18 +20,18 @@ const resume = () => {
                 <div>
                     <h5 className="my-2 text-xl font-bold">C++ Developer</h5>
                     <p className="font-semibold"> ADENTIS (October 2021-Present) </p>
-                    <p className="my-3">C++ drivers development</p>
+                    <p className="my-3">C++ software developer</p>
                 </div>
 
                 <div>
                     <h5 className="my-2 text-xl font-bold">Embedded Systems Intern</h5>
-                    <p className="font-semibold"> COCOPARKS (March 2021-September 2021) </p>
+                    <p className="font-semibold"> COCOPARKS (March 2021-Sept 2021) </p>
                     <p className="my-3">Responsible for developing a low power Embedded System</p>
                 </div>
 
                 <div>
                     <h5 className="my-2 text-xl font-bold">Embedded Systems Intern</h5>
-                    <p className="font-semibold"> LIEBHERR AEROSPACE (May 2020-September 2020) </p>
+                    <p className="font-semibold"> LIEBHERR AEROSPACE (May 2020-Sept 2020) </p>
                     <p className="my-3">HMI development for continuous monitoring and control of a motor test bench</p>
                 </div>
                 </motion.div > 
